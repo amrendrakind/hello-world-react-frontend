@@ -54,7 +54,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/amrendrakind/budget-app/issues).
+Feel free to check the [issues page](https://github.com/amrendrakind/hello-world-react-frontend/issues).
 
 ## Show your support
 
