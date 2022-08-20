@@ -4,10 +4,14 @@ import APIServices from '../APIServices';
 const initialStete = [];
 
 const greetingLists = () => async (dispatch) => {
-  const response = await APIServices.getGreetingData();
+  const greetingData = await APIServices.getGreetingData();
+  const greetings = greetingData.map((greeting) => ({
+    message: greeting.message,
+    body: greeting.body,
+  }));
   dispatch({
     type: GREETINGS,
-    payload: response,
+    payload: greetings,
   });
 };
 

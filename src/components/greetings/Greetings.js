@@ -6,19 +6,24 @@ import Greeting from './Greeting';
 
 const Greetings = () => {
   const dispatch = useDispatch();
-  const greeting = useSelector((state) => state.Greeting);
+  const greetings = useSelector((state) => state.Greeting);
+  // console.log(greetings.length)
   useEffect(() => {
-    if (greeting.length === 0) {
+    if (greetings.length === 0) {
       dispatch(greetingLists());
     }
   }, []);
-
+  // console.log(greetings);
   return (
     <div>
-      <Greeting
-        key={greeting.id}
-        greeting={greeting}
-      />
+      <ul>
+        {greetings.map((greeting) => (
+          <Greeting
+            key={greeting.id}
+            greeting={greeting}
+          />
+        ))}
+      </ul>
     </div>
   );
 };
