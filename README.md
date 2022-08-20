@@ -39,8 +39,11 @@ launch project locally with
 
 `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The app ask to select a different port:
+    - Something is already running on port 3000
+    - Would you like to run the app on another port instead? » (Y/n)
+- Enter `Y` and the app open in the browser in next free port, for example:
+- http://localhost:3001/
 
 ## Author
 
