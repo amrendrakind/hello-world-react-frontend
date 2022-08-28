@@ -7,7 +7,6 @@ import Greeting from './Greeting';
 const Greetings = () => {
   const dispatch = useDispatch();
   const greetings = useSelector((state) => state.Greeting);
-  // console.log(greetings.length)
   useEffect(() => {
     if (greetings.length === 0) {
       dispatch(greetingLists());
