@@ -12,7 +12,6 @@ const Greetings = () => {
       dispatch(greetingLists());
     }
   }, []);
-  // console.log(greetings);
   return (
     <div>
       <ul>
